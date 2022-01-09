@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai10</title>
+</head>
+<body>
+<input id="giadien" placeholder="Số điện">
+<button onclick="tinhtiendien()">Tính</button>
+<p id="sotiena"></p>
+<script>
+    function tinhtiendien() {
+        let a = Number(document.getElementById("giadien").value);
+        let b = a * 1484;
+        let c = (a - 50) * 1533 + 50 * 1484;
+        let d = (a - 100) * 1786 + 50 * 1484 + 50 * 1533;
+        let e = (a - 200) * 2242 + 50 * 1484 + 50 * 1533 + 100 * 1786;
+        let f = (a - 300) * 2503 + 50 * 1484 + 50 * 1533 + 100 * 1786 + 100 * 2242;
+        let g = (a - 400) * 2587 + 50 * 1484 + 50 * 1533 + 100 * 1786 + 100 * 2242 + 100 * 2503;
+        if (a <= 0) {
+            document.getElementById("sotiena").innerText = "Nhập lại"
+        } else if (a <= 50) {
+            document.getElementById("sotiena").innerText = b + "VNĐ";
+        } else if (a <= 100) {
+            document.getElementById("sotiena").innerText = c + "VNĐ";
+        } else if (a <= 200) {
+            document.getElementById("sotiena").innerText = d + "VNĐ";
+        } else if (a <= 300) {
+            document.getElementById("sotiena").innerText = e + "VNĐ";
+        } else if (a <= 400) {
+            document.getElementById("sotiena").innerText = f + "VNĐ";
+        } else {
+            document.getElementById("sotiena").innerText = g + "VNĐ";
+        }
+    }
+</script>
+</body>
+</html>

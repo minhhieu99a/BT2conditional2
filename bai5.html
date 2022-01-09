@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<input id="canha" placeholder="Nhập độ dài">
+<input id="canhb"placeholder="Nhập dộ dài">
+<button onclick="tinhtgv()">Tính diện tích tam giác vuông</button>
+<p id="Stgv"></p>
+<script>
+    function tinhtgv(){
+        let a = Number(document.getElementById("canha").value);
+        let b = Number(document.getElementById("canhb").value);
+        let c=a*b/2;
+        document.getElementById("Stgv").innerText=c +"m2"
+    }
+</script>
+</body>
+</html>

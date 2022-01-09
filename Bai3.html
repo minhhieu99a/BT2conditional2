@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<input id="canha" placeholder="Nhập độ dài">
+<button onclick="tinhHV()">Tính diện tích hình vuông</button>
+<p id="Shv"></p>
+<script>
+    function tinhHV(){
+        let a = Number(document.getElementById("canha").value);
+        let b = a*a
+        document.getElementById("Shv").innerText=b +"m2"
+    }
+</script>
+</body>
+</html>

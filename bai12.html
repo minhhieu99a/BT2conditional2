@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai12</title>
+</head>
+<body>
+<input id="sotienvay"placeholder="Số tiền vay">
+<input id="sothangvay"placeholder="Số tháng vay">
+<input id="laihangthang"placeholder="Lãi suất 1 tháng">
+<button onclick="tinhlai()">Tính lãi</button>
+<p id="tienlai"></p>
+<script>
+    function tinhlai(){
+        let a= Number(document.getElementById("sotienvay").value);
+        let b = Number(document.getElementById("sothangvay").value);
+        let c = Number(document.getElementById("laihangthang").value);
+        let d = a*Math.pow(1+c,b)
+        document.getElementById("tienlai").innerText=d;
+
+    }
+</script>
+</body>
+</html>

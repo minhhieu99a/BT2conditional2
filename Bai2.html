@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<input id="met" placeholder="Nhập số met">
+<button onclick="chuyendodai()">Chuyển m sang feet</button>
+<p id="feet"></p>
+<script>
+    function chuyendodai(){
+        let a = Number(document.getElementById("met").value);
+        let b = a*3.2808
+        document.getElementById("feet").innerText=b + "feet"
+    }
+</script>
+</body>
+</html>

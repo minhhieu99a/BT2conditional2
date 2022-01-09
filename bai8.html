@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<input id="sotuoi" placeholder="Nhập số tuổi">
+<button onclick="Check()">Check!</button>
+<p id="ketqua"></p>
+<script>
+    function Check(){
+        let a= Number(document.getElementById("sotuoi").value);
+        if (a>0 && a<120){
+            document.getElementById("ketqua").innerText="Đây là con người"
+        }else {
+            document.getElementById("ketqua").innerText="Đây không phải là con người"
+        }
+    }
+</script>
+</body>
+</html>

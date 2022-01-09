@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai11</title>
+</head>
+<body>
+<input id="TN" placeholder="Thu nhập">
+<input id="nguoi"placeholder="Số người phụ thuộc">
+<button onclick="tinhthuetncn()">Tính thuế TNCN</button>
+<p id="sotiena"></p>
+<script>
+    function tinhthuetncn() {
+        let a = Number(document.getElementById("TN").value);
+        let b = Number(document.getElementById("nguoi").value);
+        let c = a-11000000-b*4400000;
+        let d = c*0.05
+        let e = (c-5000000)*0.1+250000;
+        let f = (c-10000000)*0.15+750000;
+        let g = (c-18000000)*0.2+1950000;
+        let h = (c-32000000)*0.25+4750000;
+        let j = (c-52000000)*0.3+9750000;
+        let k = (c-80000000)*0.35+18150000;
+        if (c <= 0) {
+            document.getElementById("sotiena").innerText = "Nhập lại"
+        } else if (c <= 5000000) {
+            document.getElementById("sotiena").innerText = d + "VNĐ";
+        } else if (c<= 10000000) {
+            document.getElementById("sotiena").innerText = e + "VNĐ";
+        } else if (c <= 18000000) {
+            document.getElementById("sotiena").innerText = f + "VNĐ";
+        } else if (c <= 32000000) {
+            document.getElementById("sotiena").innerText = g + "VNĐ";
+        } else if (c <= 52000000) {
+            document.getElementById("sotiena").innerText = h + "VNĐ";
+        } else if (c<=80000000){
+            document.getElementById("sotiena").innerText = j + "VNĐ";
+        }else {
+            document.getElementById("sotiena").innerText =k + "VNĐ";
+        }
+    }
+</script>
+</body>
+</html>

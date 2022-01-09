@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<input id="canha" placeholder="Nhập chiều dài">
+<input id="canhb"placeholder="Nhập chiều rộng">
+<button onclick="tinhHCN()">Tính diện tích hình chữ nhật</button>
+<p id="Shcn"></p>
+<script>
+    function tinhHCN(){
+        let a = Number(document.getElementById("canha").value);
+        let b = Number(document.getElementById("canhb").value);
+        let c=a*b;
+        document.getElementById("Shcn").innerText=c +"m2"
+    }
+</script>
+</body>
+</html>

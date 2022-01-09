@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<input id="A" placeholder="Nhập a">
+<input id="B" placeholder="Nhập b">
+<button onclick="tinhx()">Tính x</button>
+<p id="ketqua"></p>
+<script>
+    function tinhx(){
+        let a=Number(document.getElementById("A").value);
+        let b=Number(document.getElementById("B").value);
+        let x =-b/a
+        document.getElementById("ketqua").innerText=x
+    }
+</script>
+</body>
+</html>
